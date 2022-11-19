@@ -4,11 +4,13 @@
 package smashbrostourney;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
+    public App() {
+        Frame f = new Frame(400, 400, "Smash Bros Bracket");
+        Panel p = new Panel(0, 0, 100, 100);
+        f.add(p);
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        System.out.println(new App());
     }
 }
