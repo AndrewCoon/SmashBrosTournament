@@ -3,18 +3,16 @@
  */
 package smashbrostourney;
 
-import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 public class App {
-    public App() {
-        SwingUtilities.isEventDispatchThread();
-        Frame f = new Frame(400, 400, "Smash Bros Bracket");
-        // f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Bracket b = new Bracket(8);
-        f.add(b);
-        f.pack();
-    }
+    // public App() {
+    // SwingUtilities.isEventDispatchThread();
+    // Frame f = new Frame(800, 800, "Smash Bros Bracket");
+    // Bracket b = new Bracket(16);
+    // f.add(b);
+    // f.pack();
+    // }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
@@ -27,9 +25,8 @@ public class App {
     private static void createAndShowGUI() {
         System.out.println("Created GUI on EDT? " +
                 SwingUtilities.isEventDispatchThread());
-        Frame f = new Frame(400, 400, "Smash Bros Bracket");
-        // f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Bracket b = new Bracket(8);
+        Bracket b = new Bracket(16);
+        Frame f = new Frame(800, 800, "Smash Bros Bracket");
         f.add(b);
         f.pack();
     }

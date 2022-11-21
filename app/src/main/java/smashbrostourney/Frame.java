@@ -7,14 +7,24 @@ import java.awt.Dimension;
 public class Frame extends JFrame {
     private Dimension d = new Dimension();
 
-    public Frame(int frameVert, int frameHor, String frameName) {
+    public Frame(int _frameVert, int _frameHor, String _frameName) {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setTitle(frameName);
-        this.setSize(frameHor, frameVert);
+        this.setTitle(_frameName);
+        this.setSize(_frameHor, _frameVert);
         this.setLocationRelativeTo(null);
         this.setResizable(true);
 
-        d = new Dimension(frameHor, frameVert);
+        d = new Dimension(_frameHor, _frameVert);
+    }
+
+    public Frame(Dimension _d, String _frameName) {
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setTitle(_frameName);
+        this.setSize(_d);
+        this.setLocationRelativeTo(null);
+        this.setResizable(true);
+
+        d = new Dimension(_d);
     }
 
     // public void add(JPanel j) {
