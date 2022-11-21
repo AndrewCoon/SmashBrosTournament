@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test
-    void appLaunches() {
-        App classUnderTest = new App();
+    void noTests() {
+        System.out.println("No Tests");
     }
 }

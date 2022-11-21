@@ -12,4 +12,12 @@ public class Record {
         this.wins = _wins;
         this.losses = _losses;
     }
+
+    public int wins() {
+        return wins;
+    }
+
+    public int losses() {
+        return losses;
+    }
 }
